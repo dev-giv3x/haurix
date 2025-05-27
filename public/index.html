@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>haurix panel</title>
+</head>
+<body>
+  <h2>Логин</h2>
+  <div id="step1">
+    <input id="login" placeholder="Login" />
+    <input id="password" type="password" placeholder="Password" />
+    <button onclick="login()">Войти</button>
+    <p id="message"></p>
+  </div>
+
+  <div id="step2" style="display:none;">
+    <input id="steamGuardCode" placeholder="Steam Guard код" /><br />
+    <button onclick="sendSteamGuard()">Отправить код</button>
+    <p id="guardMessage"></p>
+  </div>
+
+  <script>
+    async function login() {
+      const login = document.getElementById('login').value;
+      const password = document.getElementById('password').value;
+      const message = document.getElementById('message');
+      message.textContent = '...';
+
+      const resp = await fetch('http://localhost:3000/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ login, password })
+      });
+
+      const data = await resp.json();
+
+      if(data.steamGuardRequired){
+        message.textContent = 'Требуется Steam Guard код';
+        document.getElementById('step1').style.display = 'none';
+        document.getElementById('step2').style.display = 'block';
+      } else if(data.message){
+        message.textContent = data.message;
+      } else if(data.error){
+        message.textContent = 'Ошибка: ' + data.error;
+      }
+    }
+
+    async function sendSteamGuard() {
+      const code = document.getElementById('steamGuardCode').value;
+      const guardMessage = document.getElementById('guardMessage');
+      guardMessage.textContent = '...';
+
+      const resp = await fetch('http://localhost:3000/steamguard', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code })
+      });
+
+      const data = await resp.json();
+
+      if(data.message){
+        guardMessage.textContent = data.message;
+      } else if(data.error){
+        guardMessage.textContent = 'Ошибка: ' + data.error;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,712 @@
+2025-05-27T17:47:00.345Z Error reading file machineAuthToken.7xyz4.txt: ENOENT: no such file or directory, open 'D:\haurix\steam_data\user_3\machineAuthToken.7xyz4.txt'
+2025-05-27T17:47:00.885Z API GET request to https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v0001/?format=vdf&cellid=0: 200
+2025-05-27T17:47:00.892Z Randomly chose websockets server cmp2-fra2.steamserver.net:27024 (load = 42, wtd_load = 114.937779426574707)
+2025-05-27T17:47:00.892Z [W1] Connecting to WebSocket CM cmp2-fra2.steamserver.net:27024
+2025-05-27T17:47:01.297Z [W1] WebSocket connection success; now logging in
+2025-05-27T17:47:01.297Z Logging on with account name and password; fetching a new refresh token
+2025-05-27T17:47:01.303Z Sending message: ClientHello
+2025-05-27T17:47:01.320Z Sending message: Authentication.GetPasswordRSAPublicKey#1
+2025-05-27T17:47:01.748Z [W1#1] Handled message: Authentication.GetPasswordRSAPublicKey#1_Response
+2025-05-27T17:47:01.760Z Sending message: Authentication.BeginAuthSessionViaCredentials#1
+2025-05-27T17:47:02.094Z [W1#2] Handled message: Authentication.BeginAuthSessionViaCredentials#1_Response
+2025-05-27T17:47:02.097Z [steam-session] start session response {"clientId":"1578070508603573116","requestId":{"type":"Buffer","data":[78,254,127,20,164,139,181,27,82,222,205,100,246,74,226,60]},"pollInterval":5,"allowedConfirmations":[{"type":3},{"type":4}],"steamId":"76561199235248009","weakToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogImM6MTU3ODA3MDUwODYwMzU3MzExNiIsICJzdWIiOiAiNzY1NjExOTkyMzUyNDgwMDkiLCAiYXVkIjogWyAid2VhayIgXSwgImV4cCI6IDE3NDgzNjg4OTAsICJuYmYiOiAwLCAiaWF0IjogMTc0ODM2Nzk5MCwgImp0aSI6ICIwMDExXzI2NTZBNUEyXzAzMEM0IiwgIm9hdCI6IDE3NDgzNjc5OTAsICJydF9leHAiOiAwLCAiaXBfc3ViamVjdCI6ICIxMDQuMjguMjQ0Ljc2IiwgImlwX2NvbmZpcm1lciI6ICIxMDQuMjguMjQ0Ljc2IiB9.iusAkoJdrFRaFl6BfLpvQXWzSSi01jW3j40_BHzAJ4d3RXRZ4_qIsGjKLB8889vNAkk8wFmfRQZ8A985uNQVBA"}
+2025-05-27T17:47:02.097Z [steam-session] device code required
+2025-05-27T17:47:02.097Z [steam-session] submitting steam guard code 2T5TP
+2025-05-27T17:47:02.099Z Sending message: Authentication.UpdateAuthSessionWithSteamGuardCode#1
+2025-05-27T17:47:02.443Z [W1#3] Handled message: Authentication.UpdateAuthSessionWithSteamGuardCode#1_Response
+2025-05-27T17:47:02.445Z Sending message: Authentication.PollAuthSessionStatus#1
+2025-05-27T17:47:02.794Z [W1#4] Handled message: Authentication.PollAuthSessionStatus#1_Response
+2025-05-27T17:47:02.795Z [steam-session] poll response {"refreshToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInN0ZWFtIiwgInN1YiI6ICI3NjU2MTE5OTIzNTI0ODAwOSIsICJhdWQiOiBbICJjbGllbnQiLCAid2ViIiwgInJlbmV3IiwgImRlcml2ZSIgXSwgImV4cCI6IDE3NjYxMDUwNDQsICJuYmYiOiAxNzM5NzI3OTkwLCAiaWF0IjogMTc0ODM2Nzk5MCwgImp0aSI6ICIwMDExXzI2NTZBNUEyXzAzMEI3IiwgIm9hdCI6IDE3NDgzNjc5OTAsICJwZXIiOiAxLCAiaXBfc3ViamVjdCI6ICIxMDQuMjguMjQ0Ljc2IiwgImlwX2NvbmZpcm1lciI6ICIxMDQuMjguMjQ0Ljc2IiB9.4x_Jlp16ctRNSGjKjR9rFwdOAicPVGrPvvAkvekf5zaLrl6lIOWf7aj8MC7ymHqAd9FUEOotC8tESkJLX82DDg","accessToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAxMV8yNjU2QTVBMl8wMzBCNyIsICJzdWIiOiAiNzY1NjExOTkyMzUyNDgwMDkiLCAiYXVkIjogWyAiY2xpZW50IiwgIndlYiIgXSwgImV4cCI6IDE3NDg0NTQ3NjEsICJuYmYiOiAxNzM5NzI3OTkwLCAiaWF0IjogMTc0ODM2Nzk5MCwgImp0aSI6ICIwMDA3XzI2NTZBNUFBXzg4MkVDIiwgIm9hdCI6IDE3NDgzNjc5OTAsICJydF9leHAiOiAxNzY2MTA1MDQ0LCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjI0NC43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjI0NC43NiIgfQ.H1qgPC7FwokMfvLyA3kKYaNS1QOnOneRBHEUpriMytob39mK5DDf8OWO_YeCsktHxFtoFkxbeZHN0iPnXMa_DQ","hadRemoteInteraction":false,"accountName":"7xyz4"}
+2025-05-27T17:47:02.796Z Password auth succeeded in 1498 ms
+2025-05-27T17:47:02.800Z Sending message: ClientLogon
+2025-05-27T17:47:03.201Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T17:47:03.202Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T17:47:03.209Z [W1#5] Handled message: ClientLogOnResponse (OK)
+2025-05-27T17:47:03.211Z Handle logon response (OK)
+2025-05-27T17:47:03.220Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T17:47:03.222Z Sending message: ClientRequestItemAnnouncements
+2025-05-27T17:47:03.223Z Sending message: ClientRequestCommentNotifications
+2025-05-27T17:47:03.225Z Sending message: ClientChatRequestOfflineMessageCount
+2025-05-27T17:47:03.229Z Sending message: Authentication.GenerateAccessTokenForApp#1
+2025-05-27T17:47:03.233Z [W1#5] Handled message: ClientAccountInfo
+2025-05-27T17:47:03.235Z [W1#5] Handled message: ClientEmailAddrInfo
+2025-05-27T17:47:03.239Z [W1#5] Handled message: ClientFriendsList
+2025-05-27T17:47:03.241Z Sending message: ClientRequestFriendData
+2025-05-27T17:47:03.244Z [W1#5] Handled message: ClientPlayerNicknameList
+2025-05-27T17:47:03.253Z [W1#5] Handled message: ClientLicenseList
+2025-05-27T17:47:03.254Z Using token "8049398090486337961" from license for package 303386
+2025-05-27T17:47:03.255Z Using token "4298246893349144893" from license for package 201754
+2025-05-27T17:47:03.255Z Using token "17138535549676040308" from license for package 239901
+2025-05-27T17:47:03.255Z Using token "3649595003957666606" from license for package 876123
+2025-05-27T17:47:03.255Z Using token "8197093112792053760" from license for package 880539
+2025-05-27T17:47:03.255Z Using token "11989331285750426375" from license for package 51354
+2025-05-27T17:47:03.255Z Using token "5310532084012787908" from license for package 279940
+2025-05-27T17:47:03.255Z Using token "9228387370452701683" from license for package 705554
+2025-05-27T17:47:03.256Z Using token "16138162402682116475" from license for package 320220
+2025-05-27T17:47:03.256Z Using token "15142990934439625460" from license for package 915376
+2025-05-27T17:47:03.256Z Using token "18166412708170285031" from license for package 64170
+2025-05-27T17:47:03.256Z Using token "18323733597412121330" from license for package 149519
+2025-05-27T17:47:03.256Z Using token "17093901397782172073" from license for package 577069
+2025-05-27T17:47:03.256Z Using token "17827146634949186834" from license for package 520915
+2025-05-27T17:47:03.256Z Using token "18240077470036331649" from license for package 106330
+2025-05-27T17:47:03.257Z Using token "6486549536882816722" from license for package 882273
+2025-05-27T17:47:03.257Z Using token "15904915058116609451" from license for package 783649
+2025-05-27T17:47:03.257Z Using token "11501961478987064355" from license for package 730006
+2025-05-27T17:47:03.257Z Using token "2878816107743447496" from license for package 1053
+2025-05-27T17:47:03.257Z Using token "3881946019465629014" from license for package 2481
+2025-05-27T17:47:03.257Z Using token "11198706175025808046" from license for package 824224
+2025-05-27T17:47:03.257Z Using token "7758130651584914308" from license for package 401407
+2025-05-27T17:47:03.257Z Using token "12807789865434028542" from license for package 21314
+2025-05-27T17:47:03.258Z Using token "17158538354695965942" from license for package 82712
+2025-05-27T17:47:03.258Z Using token "5205492745924131948" from license for package 522835
+2025-05-27T17:47:03.258Z Using token "15984522191214727074" from license for package 802812
+2025-05-27T17:47:03.258Z Using token "13043902522606318346" from license for package 965364
+2025-05-27T17:47:03.258Z Using token "3198013166041885284" from license for package 732887
+2025-05-27T17:47:03.258Z Using token "8559331057463306982" from license for package 871877
+2025-05-27T17:47:03.258Z Using token "11766601064585129637" from license for package 19007
+2025-05-27T17:47:03.258Z Using token "5620747593283334524" from license for package 59723
+2025-05-27T17:47:03.259Z Using token "10997656681317933283" from license for package 49228
+2025-05-27T17:47:03.259Z Using token "12555184247962141765" from license for package 916370
+2025-05-27T17:47:03.259Z Using token "2770540936804440969" from license for package 59389
+2025-05-27T17:47:03.259Z Using token "10209007906091514958" from license for package 801123
+2025-05-27T17:47:03.259Z Using token "14059949278858206274" from license for package 981318
+2025-05-27T17:47:03.259Z Using token "18136412339714309135" from license for package 515
+2025-05-27T17:47:03.259Z Using token "16465918589810122726" from license for package 7877
+2025-05-27T17:47:03.260Z Using token "1777377051405027801" from license for package 193007
+2025-05-27T17:47:03.260Z Using token "10012126714787401778" from license for package 158070
+2025-05-27T17:47:03.260Z Using token "5217546743956840161" from license for package 436163
+2025-05-27T17:47:03.260Z Using token "8214787893175718058" from license for package 48765
+2025-05-27T17:47:03.260Z Using token "6786472874629952029" from license for package 674005
+2025-05-27T17:47:03.260Z Using token "15122911990231259830" from license for package 633707
+2025-05-27T17:47:03.260Z Using token "17698110641177820820" from license for package 226738
+2025-05-27T17:47:03.260Z Using token "5773308471971276639" from license for package 910066
+2025-05-27T17:47:03.261Z Using token "1358864222989099820" from license for package 1004627
+2025-05-27T17:47:03.261Z Using token "2145963750953204968" from license for package 979793
+2025-05-27T17:47:03.261Z Using token "2454300648684937044" from license for package 935446
+2025-05-27T17:47:03.261Z Using token "16665884794790236727" from license for package 979417
+2025-05-27T17:47:03.261Z Using token "413060552477208502" from license for package 554163
+2025-05-27T17:47:03.261Z Using token "11993025609157459390" from license for package 996368
+2025-05-27T17:47:03.261Z Using token "12250982111799143471" from license for package 753887
+2025-05-27T17:47:03.262Z Using token "15290564472854065107" from license for package 155279
+2025-05-27T17:47:03.262Z Using token "10399777859805571635" from license for package 305139
+2025-05-27T17:47:03.262Z Using token "9317002348055109281" from license for package 411411
+2025-05-27T17:47:03.262Z Using token "12832663517018306072" from license for package 446458
+2025-05-27T17:47:03.262Z Using token "8018029144566547739" from license for package 288350
+2025-05-27T17:47:03.262Z Using token "10660652434190618804" from license for package 0
+2025-05-27T17:47:03.262Z Using token "815597319663344205" from license for package 935158
+2025-05-27T17:47:03.263Z Using token "8671553668064317605" from license for package 993283
+2025-05-27T17:47:03.263Z Using token "8814079869219588298" from license for package 592598
+2025-05-27T17:47:03.263Z Using token "1824571125278711651" from license for package 1020633
+2025-05-27T17:47:03.263Z Using token "4622317109041568133" from license for package 995582
+2025-05-27T17:47:03.263Z Using token "5180192102835926083" from license for package 1033864
+2025-05-27T17:47:03.263Z Using token "16870821960989552043" from license for package 912609
+2025-05-27T17:47:03.263Z Using token "10994426204999217039" from license for package 1011957
+2025-05-27T17:47:03.264Z Using token "2153114724060639947" from license for package 845655
+2025-05-27T17:47:03.264Z Using token "2047162147674726524" from license for package 167571
+2025-05-27T17:47:03.264Z Using token "11613277538411700860" from license for package 163111
+2025-05-27T17:47:03.264Z Using token "2030846461651245187" from license for package 969325
+2025-05-27T17:47:03.264Z Using token "10220118254241585466" from license for package 934141
+2025-05-27T17:47:03.264Z Using token "10153144886846138904" from license for package 1034140
+2025-05-27T17:47:03.264Z Using token "14543352646973089346" from license for package 78726
+2025-05-27T17:47:03.265Z Using token "1079186267967147501" from license for package 37361
+2025-05-27T17:47:03.265Z Using token "892682324354140965" from license for package 969527
+2025-05-27T17:47:03.265Z Using token "13408755078728996789" from license for package 152198
+2025-05-27T17:47:03.265Z Using token "6112911159441233728" from license for package 874796
+2025-05-27T17:47:03.265Z Using token "16265429886843261020" from license for package 969544
+2025-05-27T17:47:03.265Z Using token "10508513357581445308" from license for package 83311
+2025-05-27T17:47:03.265Z Using token "1150686307537651523" from license for package 203389
+2025-05-27T17:47:03.266Z Using token "2257443751079391952" from license for package 216522
+2025-05-27T17:47:03.266Z Using token "12070815442170850351" from license for package 630276
+2025-05-27T17:47:03.266Z Using token "496937331686741378" from license for package 1041314
+2025-05-27T17:47:03.266Z Using token "3510384436209469685" from license for package 765135
+2025-05-27T17:47:03.266Z Using token "3143316891990426638" from license for package 971172
+2025-05-27T17:47:03.266Z Using token "13507080007178114712" from license for package 1021443
+2025-05-27T17:47:03.266Z Using token "10273025824950556377" from license for package 1025324
+2025-05-27T17:47:03.267Z Using token "1686121278077202245" from license for package 522274
+2025-05-27T17:47:03.267Z Using token "3677684472815573485" from license for package 943262
+2025-05-27T17:47:03.267Z Using token "1586989755348311034" from license for package 1019545
+2025-05-27T17:47:03.267Z Using token "4946788673760501580" from license for package 929356
+2025-05-27T17:47:03.267Z Using token "16386030353238099832" from license for package 901422
+2025-05-27T17:47:03.267Z Using token "18352924727234580348" from license for package 1055395
+2025-05-27T17:47:03.267Z Using token "9118080153310140122" from license for package 1044805
+2025-05-27T17:47:03.268Z Using token "17633657168463599200" from license for package 1062312
+2025-05-27T17:47:03.268Z Using token "10313999904794030644" from license for package 1048675
+2025-05-27T17:47:03.268Z Using token "16376348783356412534" from license for package 870862
+2025-05-27T17:47:03.268Z Using token "4577565168158555648" from license for package 1063306
+2025-05-27T17:47:03.268Z Using token "15442722666765055226" from license for package 1053374
+2025-05-27T17:47:03.268Z Using token "15789187462330372453" from license for package 1086927
+2025-05-27T17:47:03.269Z Using token "9868709828090178136" from license for package 970101
+2025-05-27T17:47:03.269Z Using token "15261966930440079443" from license for package 183300
+2025-05-27T17:47:03.269Z Using token "6727431798567539835" from license for package 726763
+2025-05-27T17:47:03.269Z Using token "7838841105897706075" from license for package 947066
+2025-05-27T17:47:03.269Z Using token "3998239694861359925" from license for package 1158283
+2025-05-27T17:47:03.269Z Using token "4285100245827599821" from license for package 1187615
+2025-05-27T17:47:03.269Z Using token "16406825874759422263" from license for package 1195039
+2025-05-27T17:47:03.270Z Using token "903187113939096431" from license for package 1183619
+2025-05-27T17:47:03.270Z Using token "7114759383052372597" from license for package 1197908
+2025-05-27T17:47:03.270Z Using token "9839938003269744296" from license for package 1019861
+2025-05-27T17:47:03.270Z Using token "5138389284789485407" from license for package 1094073
+2025-05-27T17:47:03.270Z Using token "17309479551876367360" from license for package 54029
+2025-05-27T17:47:03.270Z Using token "10557614583677886392" from license for package 243248
+2025-05-27T17:47:03.271Z Using token "6301559144876598369" from license for package 1253981
+2025-05-27T17:47:03.271Z Using token "14855467275418048881" from license for package 233499
+2025-05-27T17:47:03.271Z Using token "1344317536066741850" from license for package 245677
+2025-05-27T17:47:03.271Z Using token "8862326766351997009" from license for package 992452
+2025-05-27T17:47:03.271Z Using token "7588104945360423234" from license for package 1030362
+2025-05-27T17:47:03.271Z Using token "9177367629228692295" from license for package 1209309
+2025-05-27T17:47:03.272Z Using token "12079496293014459573" from license for package 1261257
+2025-05-27T17:47:03.272Z Using token "9289102444975026764" from license for package 1289119
+2025-05-27T17:47:03.272Z Using token "4297545157699527724" from license for package 1176156
+2025-05-27T17:47:03.272Z Using token "17350481044635972905" from license for package 1279884
+2025-05-27T17:47:03.272Z Using token "8141716052640257761" from license for package 1250669
+2025-05-27T17:47:03.272Z Using token "1149915256421721590" from license for package 1301221
+2025-05-27T17:47:03.276Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:47:03.279Z [W1#5] Handled message: ClientVACBanStatus
+2025-05-27T17:47:03.280Z [W1#5] Handled message: ClientUpdateGuestPassesList
+2025-05-27T17:47:03.282Z [W1#5] Handled message: ClientWalletInfoUpdate
+2025-05-27T17:47:03.284Z [W1#5] Handled message: ClientGameConnectTokens
+2025-05-27T17:47:03.284Z Received 10 game connect tokens. Had 0 tokens.
+2025-05-27T17:47:03.286Z [W1#5] Handled message: ClientPlayingSessionState
+2025-05-27T17:47:03.344Z [W1#6] Unhandled message: ClientServersAvailable
+2025-05-27T17:47:03.346Z [W1#6] Handled message: ClientFriendsGroupsList
+2025-05-27T17:47:03.544Z [W1#7] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T17:47:03.600Z [W1#8] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:03.614Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:47:03.620Z [W1#9] Handled message: Authentication.GenerateAccessTokenForApp#1_Response
+2025-05-27T17:47:03.669Z [W1#10] Handled message: ClientChatOfflineMessageNotification
+2025-05-27T17:47:03.675Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.676Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.677Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.677Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.678Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.679Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.680Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.680Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.681Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.681Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:03.682Z [W1#10] Handled message: ClientPersonaState
+2025-05-27T17:47:04.040Z [W1#11] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.090Z [W1#12] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.119Z [W1#13] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.149Z [W1#14] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.184Z [W1#15] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.249Z [W1#16] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.269Z [W1#17] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.300Z [W1#18] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:47:04.304Z Sending message: ClientPICSAccessTokenRequest
+2025-05-27T17:47:04.492Z [W1#19] Handled message: ClientIsLimitedAccount
+2025-05-27T17:47:04.649Z [W1#20] Handled message: ClientPICSAccessTokenResponse
+2025-05-27T17:47:04.651Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:47:05.046Z [W1#21] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:48:03.545Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T17:48:03.899Z [W1#22] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T17:48:33.946Z Sending message: ClientGamesPlayedWithDataBlob
+2025-05-27T17:48:34.293Z [W1#23] Unhandled message: PlayerClient.NotifyLastPlayedTimes#1
+2025-05-27T17:48:34.294Z [W1#23] Unhandled message: FamilyGroupsClient.NotifyRunningApps#1
+2025-05-27T17:48:34.385Z [W1#24] Handled message: ClientPlayingSessionState
+2025-05-27T17:48:34.385Z [W1#24] Handled message: ClientGameConnectTokens
+2025-05-27T17:48:34.386Z Received 1 game connect tokens. Had 10 tokens.
+2025-05-27T17:49:03.900Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T17:49:04.243Z [W1#25] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T17:50:54.424Z Error reading file machineAuthToken.7xyz4.txt: ENOENT: no such file or directory, open 'D:\haurix\steam_data\user_3\machineAuthToken.7xyz4.txt'
+2025-05-27T17:50:54.983Z API GET request to https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v0001/?format=vdf&cellid=62: 200
+2025-05-27T17:50:55.001Z Randomly chose websockets server cmp2-fra1.steamserver.net:27023 (load = 42, wtd_load = 114.91421365737915)
+2025-05-27T17:50:55.002Z [W1] Connecting to WebSocket CM cmp2-fra1.steamserver.net:27023
+2025-05-27T17:50:55.456Z [W1] WebSocket connection success; now logging in
+2025-05-27T17:50:55.456Z Logging on with account name and password; fetching a new refresh token
+2025-05-27T17:50:55.462Z Sending message: ClientHello
+2025-05-27T17:50:55.474Z Sending message: Authentication.GetPasswordRSAPublicKey#1
+2025-05-27T17:50:55.918Z [W1#1] Handled message: Authentication.GetPasswordRSAPublicKey#1_Response
+2025-05-27T17:50:55.944Z Sending message: Authentication.BeginAuthSessionViaCredentials#1
+2025-05-27T17:50:56.307Z [W1#2] Handled message: Authentication.BeginAuthSessionViaCredentials#1_Response
+2025-05-27T17:50:56.314Z [steam-session] start session response {"clientId":"15702655068484922931","requestId":{"type":"Buffer","data":[161,201,169,53,212,185,38,21,161,93,99,242,230,195,55,84]},"pollInterval":5,"allowedConfirmations":[{"type":3},{"type":4}],"steamId":"76561199235248009","weakToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogImM6MTU3MDI2NTUwNjg0ODQ5MjI5MzEiLCAic3ViIjogIjc2NTYxMTk5MjM1MjQ4MDA5IiwgImF1ZCI6IFsgIndlYWsiIF0sICJleHAiOiAxNzQ4MzY5MTI0LCAibmJmIjogMCwgImlhdCI6IDE3NDgzNjgyMjQsICJqdGkiOiAiMDAwN18yNjU2QTVBQV85NURGRSIsICJvYXQiOiAxNzQ4MzY4MjI0LCAicnRfZXhwIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjIxMi43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjIxMi43NiIgfQ.v4NGGKVouzAkVsh6MbK0qod14viREKzgHrIg3Xl_5tmla5ifU6XDw__LTyb8V0-pCUabaOeAsKZ53Vh9pv5eAw"}
+2025-05-27T17:50:56.314Z [steam-session] device code required
+2025-05-27T17:50:56.315Z [steam-session] submitting steam guard code TPRHY
+2025-05-27T17:50:56.319Z Sending message: Authentication.UpdateAuthSessionWithSteamGuardCode#1
+2025-05-27T17:50:56.657Z [W1#3] Handled message: Authentication.UpdateAuthSessionWithSteamGuardCode#1_Response
+2025-05-27T17:50:56.661Z Sending message: Authentication.PollAuthSessionStatus#1
+2025-05-27T17:50:57.006Z [W1#4] Handled message: Authentication.PollAuthSessionStatus#1_Response
+2025-05-27T17:50:57.009Z [steam-session] poll response {"refreshToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInN0ZWFtIiwgInN1YiI6ICI3NjU2MTE5OTIzNTI0ODAwOSIsICJhdWQiOiBbICJjbGllbnQiLCAid2ViIiwgInJlbmV3IiwgImRlcml2ZSIgXSwgImV4cCI6IDE3NjYyNzM1OTQsICJuYmYiOiAxNzM5NzI4MjI0LCAiaWF0IjogMTc0ODM2ODIyNCwgImp0aSI6ICIwMDA3XzI2NTZBNUFBXzk1REYzIiwgIm9hdCI6IDE3NDgzNjgyMjQsICJwZXIiOiAxLCAiaXBfc3ViamVjdCI6ICIxMDQuMjguMjEyLjc2IiwgImlwX2NvbmZpcm1lciI6ICIxMDQuMjguMjEyLjc2IiB9.fZKxQR9Jm9-xjz1LGR-tajTjzgcNS7GnJGQQhwI2mMhogBRFyhJbszOqTAMHbI7lTDc9iiAOMpDac-IR0g8yAQ","accessToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAwN18yNjU2QTVBQV85NURGMyIsICJzdWIiOiAiNzY1NjExOTkyMzUyNDgwMDkiLCAiYXVkIjogWyAiY2xpZW50IiwgIndlYiIgXSwgImV4cCI6IDE3NDg0NTYyNDIsICJuYmYiOiAxNzM5NzI4MjI0LCAiaWF0IjogMTc0ODM2ODIyNCwgImp0aSI6ICIwMDA3XzI2NTZBNUFBXzk1RUNDIiwgIm9hdCI6IDE3NDgzNjgyMjQsICJydF9leHAiOiAxNzY2MjczNTk0LCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjIxMi43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjIxMi43NiIgfQ.cWuXtWzp6I1d7L-7UqBHsHPtTsoaCQCSk3bUm7jNFS1Q4nZmoScrqx1b2lAPJKU3OuYKHXvom55GRKhWRZgnDw","hadRemoteInteraction":false,"accountName":"7xyz4"}
+2025-05-27T17:50:57.011Z Password auth succeeded in 1554 ms
+2025-05-27T17:50:57.022Z Sending message: ClientLogon
+2025-05-27T17:50:57.356Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T17:50:57.357Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T17:50:57.364Z [W1#5] Handled message: ClientLogOnResponse (OK)
+2025-05-27T17:50:57.366Z Handle logon response (OK)
+2025-05-27T17:54:48.291Z Error reading file machineAuthToken.7xyz4.txt: ENOENT: no such file or directory, open 'D:\haurix\steam_data\user_3\machineAuthToken.7xyz4.txt'
+2025-05-27T17:54:49.055Z API GET request to https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v0001/?format=vdf&cellid=0: 200
+2025-05-27T17:54:49.070Z Randomly chose websockets server cmp1-sea1.steamserver.net:443 (load = 18, wtd_load = 13.2415714263916016)
+2025-05-27T17:54:49.071Z [W1] Connecting to WebSocket CM cmp1-sea1.steamserver.net:443
+2025-05-27T17:54:49.906Z [W1] WebSocket connection success; now logging in
+2025-05-27T17:54:49.907Z Logging on with account name and password; fetching a new refresh token
+2025-05-27T17:54:49.916Z Sending message: ClientHello
+2025-05-27T17:54:49.937Z Sending message: Authentication.GetPasswordRSAPublicKey#1
+2025-05-27T17:54:50.499Z [W1#1] Handled message: Authentication.GetPasswordRSAPublicKey#1_Response
+2025-05-27T17:54:50.521Z Sending message: Authentication.BeginAuthSessionViaCredentials#1
+2025-05-27T17:54:50.886Z [W1#2] Handled message: Authentication.BeginAuthSessionViaCredentials#1_Response
+2025-05-27T17:54:50.892Z [steam-session] start session response {"clientId":"11294878176513287974","requestId":{"type":"Buffer","data":[190,119,42,237,21,44,242,230,12,38,29,106,126,8,98,177]},"pollInterval":5,"allowedConfirmations":[{"type":3},{"type":4}],"steamId":"76561199235248009","weakToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogImM6MTEyOTQ4NzgxNzY1MTMyODc5NzQiLCAic3ViIjogIjc2NTYxMTk5MjM1MjQ4MDA5IiwgImF1ZCI6IFsgIndlYWsiIF0sICJleHAiOiAxNzQ4MzY5MzU4LCAibmJmIjogMCwgImlhdCI6IDE3NDgzNjg0NTgsICJqdGkiOiAiMDAxOV8yNjU2QTVBMF84QUQ4MyIsICJvYXQiOiAxNzQ4MzY4NDU4LCAicnRfZXhwIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjI0NC43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjI0NC43NiIgfQ.-6ZUEfLR7W8O5u2ynmXagUNbK_DDY5bQUXzxt1Tq1YDvS-1_XAn9BUyTD6TgRFGk8V-R0cuBZVZEcBpcKERDAQ"}
+2025-05-27T17:54:50.893Z [steam-session] device code required
+2025-05-27T17:54:50.894Z [steam-session] submitting steam guard code 36PCK
+2025-05-27T17:54:50.896Z Sending message: Authentication.UpdateAuthSessionWithSteamGuardCode#1
+2025-05-27T17:54:51.237Z [W1#3] Handled message: Authentication.UpdateAuthSessionWithSteamGuardCode#1_Response
+2025-05-27T17:54:51.242Z Sending message: Authentication.PollAuthSessionStatus#1
+2025-05-27T17:54:51.585Z [W1#4] Handled message: Authentication.PollAuthSessionStatus#1_Response
+2025-05-27T17:54:51.588Z [steam-session] poll response {"refreshToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInN0ZWFtIiwgInN1YiI6ICI3NjU2MTE5OTIzNTI0ODAwOSIsICJhdWQiOiBbICJjbGllbnQiLCAid2ViIiwgInJlbmV3IiwgImRlcml2ZSIgXSwgImV4cCI6IDE3NjY2ODg0OTEsICJuYmYiOiAxNzM5NzI4NDU5LCAiaWF0IjogMTc0ODM2ODQ1OSwgImp0aSI6ICIwMDE5XzI2NTZBNUEwXzhBRDdBIiwgIm9hdCI6IDE3NDgzNjg0NTksICJwZXIiOiAxLCAiaXBfc3ViamVjdCI6ICIxMDQuMjguMjQ0Ljc2IiwgImlwX2NvbmZpcm1lciI6ICIxMDQuMjguMjQ0Ljc2IiB9.Fu2RRDLDGpl_-YFi8NBDz7V4cDC4gy-qYS0sn1CeavtVqOREH24yR6c4zAwca-Whjkmu5BtXStx7FEZ6-7-RBA","accessToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAxOV8yNjU2QTVBMF84QUQ3QSIsICJzdWIiOiAiNzY1NjExOTkyMzUyNDgwMDkiLCAiYXVkIjogWyAiY2xpZW50IiwgIndlYiIgXSwgImV4cCI6IDE3NDg0NTU5NDcsICJuYmYiOiAxNzM5NzI4NDU5LCAiaWF0IjogMTc0ODM2ODQ1OSwgImp0aSI6ICIwMDA3XzI2NTZBNUFBX0EzQzNDIiwgIm9hdCI6IDE3NDgzNjg0NTksICJydF9leHAiOiAxNzY2Njg4NDkxLCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjI0NC43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjI0NC43NiIgfQ.pUZyi0MWlB_v3FC1GDPVZhlH6Ll2EHrx1bGDkMw1q1ZDJxq_cm617dvrMB9EZk_a9zxMOM8C9ZYnnqSQSWHgCg","hadRemoteInteraction":false,"accountName":"7xyz4"}
+2025-05-27T17:54:51.589Z Password auth succeeded in 1682 ms
+2025-05-27T17:54:51.595Z Sending message: ClientLogon
+2025-05-27T17:54:51.998Z Enqueued incoming message; queue size is now 1
+2025-05-27T17:54:51.999Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T17:54:51.999Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T17:54:52.004Z [W1#5] Handled message: ClientLogOnResponse (OK)
+2025-05-27T17:54:52.005Z Handle logon response (OK)
+2025-05-27T17:54:52.010Z Sending message: ClientChangeStatus
+2025-05-27T17:54:52.012Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T17:54:52.013Z Sending message: ClientRequestItemAnnouncements
+2025-05-27T17:54:52.014Z Sending message: ClientRequestCommentNotifications
+2025-05-27T17:54:52.015Z Sending message: ClientChatRequestOfflineMessageCount
+2025-05-27T17:54:52.019Z Sending message: Authentication.GenerateAccessTokenForApp#1
+2025-05-27T17:54:52.021Z [W1#5] Handled message: ClientAccountInfo
+2025-05-27T17:54:52.023Z [W1#5] Handled message: ClientEmailAddrInfo
+2025-05-27T17:54:52.026Z [W1#5] Handled message: ClientFriendsList
+2025-05-27T17:54:52.029Z Sending message: ClientRequestFriendData
+2025-05-27T17:54:52.032Z [W1#5] Handled message: ClientPlayerNicknameList
+2025-05-27T17:54:52.042Z [W1#5] Handled message: ClientLicenseList
+2025-05-27T17:54:52.043Z Using token "8049398090486337961" from license for package 303386
+2025-05-27T17:54:52.048Z Using token "4298246893349144893" from license for package 201754
+2025-05-27T17:54:52.048Z Using token "17138535549676040308" from license for package 239901
+2025-05-27T17:54:52.049Z Using token "3649595003957666606" from license for package 876123
+2025-05-27T17:54:52.049Z Using token "8197093112792053760" from license for package 880539
+2025-05-27T17:54:52.049Z Using token "11989331285750426375" from license for package 51354
+2025-05-27T17:54:52.049Z Using token "5310532084012787908" from license for package 279940
+2025-05-27T17:54:52.049Z Using token "9228387370452701683" from license for package 705554
+2025-05-27T17:54:52.049Z Using token "16138162402682116475" from license for package 320220
+2025-05-27T17:54:52.050Z Using token "15142990934439625460" from license for package 915376
+2025-05-27T17:54:52.050Z Using token "18166412708170285031" from license for package 64170
+2025-05-27T17:54:52.050Z Using token "18323733597412121330" from license for package 149519
+2025-05-27T17:54:52.050Z Using token "17093901397782172073" from license for package 577069
+2025-05-27T17:54:52.050Z Using token "17827146634949186834" from license for package 520915
+2025-05-27T17:54:52.050Z Using token "18240077470036331649" from license for package 106330
+2025-05-27T17:54:52.050Z Using token "6486549536882816722" from license for package 882273
+2025-05-27T17:54:52.051Z Using token "15904915058116609451" from license for package 783649
+2025-05-27T17:54:52.051Z Using token "11501961478987064355" from license for package 730006
+2025-05-27T17:54:52.051Z Using token "2878816107743447496" from license for package 1053
+2025-05-27T17:54:52.051Z Using token "3881946019465629014" from license for package 2481
+2025-05-27T17:54:52.051Z Using token "11198706175025808046" from license for package 824224
+2025-05-27T17:54:52.051Z Using token "7758130651584914308" from license for package 401407
+2025-05-27T17:54:52.051Z Using token "12807789865434028542" from license for package 21314
+2025-05-27T17:54:52.051Z Using token "17158538354695965942" from license for package 82712
+2025-05-27T17:54:52.052Z Using token "5205492745924131948" from license for package 522835
+2025-05-27T17:54:52.052Z Using token "15984522191214727074" from license for package 802812
+2025-05-27T17:54:52.052Z Using token "13043902522606318346" from license for package 965364
+2025-05-27T17:54:52.052Z Using token "3198013166041885284" from license for package 732887
+2025-05-27T17:54:52.052Z Using token "8559331057463306982" from license for package 871877
+2025-05-27T17:54:52.052Z Using token "11766601064585129637" from license for package 19007
+2025-05-27T17:54:52.052Z Using token "5620747593283334524" from license for package 59723
+2025-05-27T17:54:52.053Z Using token "10997656681317933283" from license for package 49228
+2025-05-27T17:54:52.053Z Using token "12555184247962141765" from license for package 916370
+2025-05-27T17:54:52.053Z Using token "2770540936804440969" from license for package 59389
+2025-05-27T17:54:52.053Z Using token "10209007906091514958" from license for package 801123
+2025-05-27T17:54:52.053Z Using token "14059949278858206274" from license for package 981318
+2025-05-27T17:54:52.053Z Using token "18136412339714309135" from license for package 515
+2025-05-27T17:54:52.053Z Using token "16465918589810122726" from license for package 7877
+2025-05-27T17:54:52.053Z Using token "1777377051405027801" from license for package 193007
+2025-05-27T17:54:52.054Z Using token "10012126714787401778" from license for package 158070
+2025-05-27T17:54:52.054Z Using token "5217546743956840161" from license for package 436163
+2025-05-27T17:54:52.054Z Using token "8214787893175718058" from license for package 48765
+2025-05-27T17:54:52.054Z Using token "6786472874629952029" from license for package 674005
+2025-05-27T17:54:52.055Z Using token "15122911990231259830" from license for package 633707
+2025-05-27T17:54:52.055Z Using token "17698110641177820820" from license for package 226738
+2025-05-27T17:54:52.055Z Using token "5773308471971276639" from license for package 910066
+2025-05-27T17:54:52.055Z Using token "1358864222989099820" from license for package 1004627
+2025-05-27T17:54:52.056Z Using token "2145963750953204968" from license for package 979793
+2025-05-27T17:54:52.056Z Using token "2454300648684937044" from license for package 935446
+2025-05-27T17:54:52.056Z Using token "16665884794790236727" from license for package 979417
+2025-05-27T17:54:52.056Z Using token "413060552477208502" from license for package 554163
+2025-05-27T17:54:52.056Z Using token "11993025609157459390" from license for package 996368
+2025-05-27T17:54:52.056Z Using token "12250982111799143471" from license for package 753887
+2025-05-27T17:54:52.057Z Using token "15290564472854065107" from license for package 155279
+2025-05-27T17:54:52.057Z Using token "10399777859805571635" from license for package 305139
+2025-05-27T17:54:52.057Z Using token "9317002348055109281" from license for package 411411
+2025-05-27T17:54:52.057Z Using token "12832663517018306072" from license for package 446458
+2025-05-27T17:54:52.057Z Using token "8018029144566547739" from license for package 288350
+2025-05-27T17:54:52.057Z Using token "10660652434190618804" from license for package 0
+2025-05-27T17:54:52.057Z Using token "815597319663344205" from license for package 935158
+2025-05-27T17:54:52.057Z Using token "8671553668064317605" from license for package 993283
+2025-05-27T17:54:52.058Z Using token "8814079869219588298" from license for package 592598
+2025-05-27T17:54:52.058Z Using token "1824571125278711651" from license for package 1020633
+2025-05-27T17:54:52.058Z Using token "4622317109041568133" from license for package 995582
+2025-05-27T17:54:52.058Z Using token "5180192102835926083" from license for package 1033864
+2025-05-27T17:54:52.058Z Using token "16870821960989552043" from license for package 912609
+2025-05-27T17:54:52.058Z Using token "10994426204999217039" from license for package 1011957
+2025-05-27T17:54:52.058Z Using token "2153114724060639947" from license for package 845655
+2025-05-27T17:54:52.059Z Using token "2047162147674726524" from license for package 167571
+2025-05-27T17:54:52.059Z Using token "11613277538411700860" from license for package 163111
+2025-05-27T17:54:52.059Z Using token "2030846461651245187" from license for package 969325
+2025-05-27T17:54:52.059Z Using token "10220118254241585466" from license for package 934141
+2025-05-27T17:54:52.059Z Using token "10153144886846138904" from license for package 1034140
+2025-05-27T17:54:52.059Z Using token "14543352646973089346" from license for package 78726
+2025-05-27T17:54:52.059Z Using token "1079186267967147501" from license for package 37361
+2025-05-27T17:54:52.059Z Using token "892682324354140965" from license for package 969527
+2025-05-27T17:54:52.060Z Using token "13408755078728996789" from license for package 152198
+2025-05-27T17:54:52.060Z Using token "6112911159441233728" from license for package 874796
+2025-05-27T17:54:52.060Z Using token "16265429886843261020" from license for package 969544
+2025-05-27T17:54:52.060Z Using token "10508513357581445308" from license for package 83311
+2025-05-27T17:54:52.060Z Using token "1150686307537651523" from license for package 203389
+2025-05-27T17:54:52.060Z Using token "2257443751079391952" from license for package 216522
+2025-05-27T17:54:52.060Z Using token "12070815442170850351" from license for package 630276
+2025-05-27T17:54:52.061Z Using token "496937331686741378" from license for package 1041314
+2025-05-27T17:54:52.061Z Using token "3510384436209469685" from license for package 765135
+2025-05-27T17:54:52.061Z Using token "3143316891990426638" from license for package 971172
+2025-05-27T17:54:52.061Z Using token "13507080007178114712" from license for package 1021443
+2025-05-27T17:54:52.061Z Using token "10273025824950556377" from license for package 1025324
+2025-05-27T17:54:52.061Z Using token "1686121278077202245" from license for package 522274
+2025-05-27T17:54:52.061Z Using token "3677684472815573485" from license for package 943262
+2025-05-27T17:54:52.062Z Using token "1586989755348311034" from license for package 1019545
+2025-05-27T17:54:52.062Z Using token "4946788673760501580" from license for package 929356
+2025-05-27T17:54:52.062Z Using token "16386030353238099832" from license for package 901422
+2025-05-27T17:54:52.062Z Using token "18352924727234580348" from license for package 1055395
+2025-05-27T17:54:52.062Z Using token "9118080153310140122" from license for package 1044805
+2025-05-27T17:54:52.062Z Using token "17633657168463599200" from license for package 1062312
+2025-05-27T17:54:52.062Z Using token "10313999904794030644" from license for package 1048675
+2025-05-27T17:54:52.063Z Using token "16376348783356412534" from license for package 870862
+2025-05-27T17:54:52.063Z Using token "4577565168158555648" from license for package 1063306
+2025-05-27T17:54:52.063Z Using token "15442722666765055226" from license for package 1053374
+2025-05-27T17:54:52.063Z Using token "15789187462330372453" from license for package 1086927
+2025-05-27T17:54:52.063Z Using token "9868709828090178136" from license for package 970101
+2025-05-27T17:54:52.063Z Using token "15261966930440079443" from license for package 183300
+2025-05-27T17:54:52.063Z Using token "6727431798567539835" from license for package 726763
+2025-05-27T17:54:52.063Z Using token "7838841105897706075" from license for package 947066
+2025-05-27T17:54:52.064Z Using token "3998239694861359925" from license for package 1158283
+2025-05-27T17:54:52.064Z Using token "4285100245827599821" from license for package 1187615
+2025-05-27T17:54:52.064Z Using token "16406825874759422263" from license for package 1195039
+2025-05-27T17:54:52.064Z Using token "903187113939096431" from license for package 1183619
+2025-05-27T17:54:52.064Z Using token "7114759383052372597" from license for package 1197908
+2025-05-27T17:54:52.064Z Using token "9839938003269744296" from license for package 1019861
+2025-05-27T17:54:52.064Z Using token "5138389284789485407" from license for package 1094073
+2025-05-27T17:54:52.065Z Using token "17309479551876367360" from license for package 54029
+2025-05-27T17:54:52.065Z Using token "10557614583677886392" from license for package 243248
+2025-05-27T17:54:52.065Z Using token "6301559144876598369" from license for package 1253981
+2025-05-27T17:54:52.065Z Using token "14855467275418048881" from license for package 233499
+2025-05-27T17:54:52.065Z Using token "1344317536066741850" from license for package 245677
+2025-05-27T17:54:52.065Z Using token "8862326766351997009" from license for package 992452
+2025-05-27T17:54:52.065Z Using token "7588104945360423234" from license for package 1030362
+2025-05-27T17:54:52.065Z Using token "9177367629228692295" from license for package 1209309
+2025-05-27T17:54:52.066Z Using token "12079496293014459573" from license for package 1261257
+2025-05-27T17:54:52.066Z Using token "9289102444975026764" from license for package 1289119
+2025-05-27T17:54:52.066Z Using token "4297545157699527724" from license for package 1176156
+2025-05-27T17:54:52.066Z Using token "17350481044635972905" from license for package 1279884
+2025-05-27T17:54:52.066Z Using token "8141716052640257761" from license for package 1250669
+2025-05-27T17:54:52.066Z Using token "1149915256421721590" from license for package 1301221
+2025-05-27T17:54:52.071Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:54:52.074Z [W1#5] Handled message: ClientUpdateGuestPassesList
+2025-05-27T17:54:52.076Z [W1#5] Handled message: ClientWalletInfoUpdate
+2025-05-27T17:54:52.078Z [W1#5] Handled message: ClientGameConnectTokens
+2025-05-27T17:54:52.078Z Received 10 game connect tokens. Had 0 tokens.
+2025-05-27T17:54:52.079Z [W1#5] Handled message: ClientPlayingSessionState
+2025-05-27T17:54:52.080Z [W1#5] Handled message: ClientVACBanStatus
+2025-05-27T17:54:52.083Z [W1#6] Handled message: SteamNotificationClient.NotificationsReceived#1
+2025-05-27T17:54:52.086Z [W1#7] Handled message: ClientFriendsGroupsList
+2025-05-27T17:54:52.395Z [W1#8] Handled message: ClientPersonaState
+2025-05-27T17:54:52.398Z [W1#8] Handled message: ClientPersonaState
+2025-05-27T17:54:52.405Z [W1#8] Handled message: ClientClanState
+2025-05-27T17:54:52.405Z [W1#8] Handled message: ClientClanState
+2025-05-27T17:54:52.406Z [W1#8] Handled message: ClientPersonaState
+2025-05-27T17:54:52.407Z [W1#8] Handled message: ClientPersonaState
+2025-05-27T17:54:52.410Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:54:52.484Z [W1#9] Unhandled message: ClientServersAvailable
+2025-05-27T17:54:52.502Z [W1#10] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T17:54:52.580Z [W1#11] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:52.596Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:54:52.606Z [W1#12] Handled message: Authentication.GenerateAccessTokenForApp#1_Response
+2025-05-27T17:54:52.608Z [W1#12] Handled message: ClientChatOfflineMessageNotification
+2025-05-27T17:54:52.609Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.610Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.611Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.611Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.612Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.613Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.613Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.614Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.614Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.615Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.615Z [W1#12] Handled message: ClientPersonaState
+2025-05-27T17:54:52.618Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:54:52.739Z [W1#13] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:53.237Z [W1#14] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:53.416Z [W1#15] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:53.594Z [W1#16] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:53.730Z Enqueued incoming message; queue size is now 1
+2025-05-27T17:54:53.737Z [W1#17] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:53.766Z [W1#18] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:53.839Z [W1#19] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:54.038Z [W1#20] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:54.186Z [W1#21] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:54.233Z [W1#22] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:54.237Z Sending message: ClientPICSAccessTokenRequest
+2025-05-27T17:54:54.486Z [W1#23] Handled message: ClientIsLimitedAccount
+2025-05-27T17:54:54.581Z [W1#24] Handled message: ClientPICSAccessTokenResponse
+2025-05-27T17:54:54.582Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T17:54:54.943Z [W1#25] Handled message: ClientPICSProductInfoResponse
+2025-05-27T17:54:57.984Z Sending message: ClientGamesPlayedWithDataBlob
+2025-05-27T17:54:58.286Z [W1#26] Handled message: ClientPlayingSessionState
+2025-05-27T17:54:58.287Z [W1#26] Handled message: ClientGameConnectTokens
+2025-05-27T17:54:58.288Z Received 1 game connect tokens. Had 10 tokens.
+2025-05-27T17:54:58.288Z [W1#26] Unhandled message: PlayerClient.NotifyLastPlayedTimes#1
+2025-05-27T17:54:58.379Z [W1#27] Unhandled message: FamilyGroupsClient.NotifyRunningApps#1
+2025-05-27T17:54:58.380Z [W1#27] Handled message: ClientPersonaState
+2025-05-27T17:55:52.503Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T17:55:52.842Z [W1#28] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T17:56:29.294Z [W1#29] Handled message: SteamNotificationClient.NotificationsReceived#1
+2025-05-27T17:56:35.787Z [W1#30] Handled message: SteamNotificationClient.NotificationsReceived#1
+2025-05-27T17:56:43.837Z [W1#31] Handled message: ClientClanState
+2025-05-27T17:56:45.988Z [W1#32] Handled message: ClientClanState
+2025-05-27T17:56:52.843Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T17:56:53.138Z [W1#33] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T17:57:53.139Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T17:57:53.439Z [W1#34] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T17:57:55.739Z [W1#35] Handled message: ClientPersonaState
+2025-05-27T17:58:02.639Z [W1#36] Handled message: ClientPersonaState
+2025-05-27T18:03:08.039Z Error reading file machineAuthToken.7xyz4.txt: ENOENT: no such file or directory, open 'D:\haurix\steam_data\user_3\machineAuthToken.7xyz4.txt'
+2025-05-27T18:03:08.502Z API GET request to https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v0001/?format=vdf&cellid=62: 200
+2025-05-27T18:03:08.508Z Randomly chose websockets server cmp1-fra2.steamserver.net:27023 (load = 42, wtd_load = 118.390824317932129)
+2025-05-27T18:03:08.509Z [W2] Connecting to WebSocket CM cmp1-fra2.steamserver.net:27023
+2025-05-27T18:03:08.912Z [W2] WebSocket connection success; now logging in
+2025-05-27T18:03:08.912Z Logging on with account name and password; fetching a new refresh token
+2025-05-27T18:03:08.913Z Sending message: ClientHello
+2025-05-27T18:03:08.915Z Sending message: Authentication.GetPasswordRSAPublicKey#1
+2025-05-27T18:03:09.325Z [W2#1] Handled message: Authentication.GetPasswordRSAPublicKey#1_Response
+2025-05-27T18:03:09.339Z Sending message: Authentication.BeginAuthSessionViaCredentials#1
+2025-05-27T18:03:09.724Z [W2#2] Handled message: Authentication.BeginAuthSessionViaCredentials#1_Response
+2025-05-27T18:03:09.725Z [steam-session] start session response {"clientId":"10914119380681848355","requestId":{"type":"Buffer","data":[18,72,56,58,141,207,8,17,158,49,154,48,10,198,131,125]},"pollInterval":5,"allowedConfirmations":[{"type":3},{"type":4}],"steamId":"76561199235248009","weakToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogImM6MTA5MTQxMTkzODA2ODE4NDgzNTUiLCAic3ViIjogIjc2NTYxMTk5MjM1MjQ4MDA5IiwgImF1ZCI6IFsgIndlYWsiIF0sICJleHAiOiAxNzQ4MzY5ODU3LCAibmJmIjogMCwgImlhdCI6IDE3NDgzNjg5NTcsICJqdGkiOiAiMDAwNl8yNjU2QTVBQV83Q0UxMyIsICJvYXQiOiAxNzQ4MzY4OTU3LCAicnRfZXhwIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjI0NC43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjI0NC43NiIgfQ.d9fXzBWSqEcrT0UtIUhaQOLOX01BPNrsxwbSPhgNaUjrHmf6UTyyQQsXeN6nfq31Dp58L4_kdjswI6jgo2u7DQ"}
+2025-05-27T18:03:09.726Z [steam-session] device code required
+2025-05-27T18:03:09.726Z [steam-session] submitting steam guard code G9DXY
+2025-05-27T18:03:09.726Z Sending message: Authentication.UpdateAuthSessionWithSteamGuardCode#1
+2025-05-27T18:03:10.073Z [W2#3] Handled message: Authentication.UpdateAuthSessionWithSteamGuardCode#1_Response
+2025-05-27T18:03:10.073Z Sending message: Authentication.PollAuthSessionStatus#1
+2025-05-27T18:03:10.373Z [W2#4] Handled message: Authentication.PollAuthSessionStatus#1_Response
+2025-05-27T18:03:10.374Z [steam-session] poll response {"refreshToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInN0ZWFtIiwgInN1YiI6ICI3NjU2MTE5OTIzNTI0ODAwOSIsICJhdWQiOiBbICJjbGllbnQiLCAid2ViIiwgInJlbmV3IiwgImRlcml2ZSIgXSwgImV4cCI6IDE3NjY0ODQ5NDAsICJuYmYiOiAxNzM5NzI4OTU4LCAiaWF0IjogMTc0ODM2ODk1OCwgImp0aSI6ICIwMDA2XzI2NTZBNUFBXzdDRTAyIiwgIm9hdCI6IDE3NDgzNjg5NTgsICJwZXIiOiAxLCAiaXBfc3ViamVjdCI6ICIxMDQuMjguMjQ0Ljc2IiwgImlwX2NvbmZpcm1lciI6ICIxMDQuMjguMjQ0Ljc2IiB9.OtGrqozV8JotZX7_oa7BgJ6K1cyORFB2avEAaEKp4LbxW2hzdjYszojxhYPdH682SOtIuouFMleL5tNQJWV3BQ","accessToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAwNl8yNjU2QTVBQV83Q0UwMiIsICJzdWIiOiAiNzY1NjExOTkyMzUyNDgwMDkiLCAiYXVkIjogWyAiY2xpZW50IiwgIndlYiIgXSwgImV4cCI6IDE3NDg0NTY1ODEsICJuYmYiOiAxNzM5NzI4OTU4LCAiaWF0IjogMTc0ODM2ODk1OCwgImp0aSI6ICIwMDA3XzI2NTZBNUFBX0MxQ0Y1IiwgIm9hdCI6IDE3NDgzNjg5NTgsICJydF9leHAiOiAxNzY2NDg0OTQwLCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjI0NC43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjI0NC43NiIgfQ.Z1y8IbNXUQcAs4swYNIXThXYiujhyVu6oa-L0hyvIwJ-NVtFxOZ0oApQaPMFubl1T2uOrgMc0A1PB4wC0HeACw","hadRemoteInteraction":false,"accountName":"7xyz4"}
+2025-05-27T18:03:10.375Z Password auth succeeded in 1462 ms
+2025-05-27T18:03:10.375Z Sending message: ClientLogon
+2025-05-27T18:03:10.778Z [W2#5] Unhandled message: ClientServersAvailable
+2025-05-27T18:03:10.779Z [W2#5] Unhandled message: ClientServersAvailable
+2025-05-27T18:03:10.779Z [W2#5] Handled message: ClientLogOnResponse (OK)
+2025-05-27T18:03:10.780Z Handle logon response (OK)
+2025-05-27T18:03:10.784Z Sending message: ClientChangeStatus
+2025-05-27T18:03:10.784Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:03:10.785Z Sending message: ClientRequestItemAnnouncements
+2025-05-27T18:03:10.785Z Sending message: ClientRequestCommentNotifications
+2025-05-27T18:03:10.786Z Sending message: ClientChatRequestOfflineMessageCount
+2025-05-27T18:03:10.787Z Sending message: Authentication.GenerateAccessTokenForApp#1
+2025-05-27T18:03:10.787Z [W2#5] Handled message: ClientAccountInfo
+2025-05-27T18:03:10.788Z [W2#5] Handled message: ClientEmailAddrInfo
+2025-05-27T18:03:10.789Z [W2#5] Handled message: ClientFriendsList
+2025-05-27T18:03:10.790Z Sending message: ClientRequestFriendData
+2025-05-27T18:03:10.792Z [W2#5] Handled message: ClientPlayerNicknameList
+2025-05-27T18:03:10.796Z [W2#5] Handled message: ClientLicenseList
+2025-05-27T18:03:10.796Z Using token "8049398090486337961" from license for package 303386
+2025-05-27T18:03:10.797Z Using token "4298246893349144893" from license for package 201754
+2025-05-27T18:03:10.797Z Using token "17138535549676040308" from license for package 239901
+2025-05-27T18:03:10.797Z Using token "3649595003957666606" from license for package 876123
+2025-05-27T18:03:10.797Z Using token "8197093112792053760" from license for package 880539
+2025-05-27T18:03:10.797Z Using token "11989331285750426375" from license for package 51354
+2025-05-27T18:03:10.797Z Using token "5310532084012787908" from license for package 279940
+2025-05-27T18:03:10.798Z Using token "9228387370452701683" from license for package 705554
+2025-05-27T18:03:10.798Z Using token "16138162402682116475" from license for package 320220
+2025-05-27T18:03:10.798Z Using token "15142990934439625460" from license for package 915376
+2025-05-27T18:03:10.798Z Using token "18166412708170285031" from license for package 64170
+2025-05-27T18:03:10.798Z Using token "18323733597412121330" from license for package 149519
+2025-05-27T18:03:10.798Z Using token "17093901397782172073" from license for package 577069
+2025-05-27T18:03:10.798Z Using token "17827146634949186834" from license for package 520915
+2025-05-27T18:03:10.798Z Using token "18240077470036331649" from license for package 106330
+2025-05-27T18:03:10.799Z Using token "6486549536882816722" from license for package 882273
+2025-05-27T18:03:10.799Z Using token "15904915058116609451" from license for package 783649
+2025-05-27T18:03:10.799Z Using token "11501961478987064355" from license for package 730006
+2025-05-27T18:03:10.799Z Using token "2878816107743447496" from license for package 1053
+2025-05-27T18:03:10.799Z Using token "3881946019465629014" from license for package 2481
+2025-05-27T18:03:10.799Z Using token "11198706175025808046" from license for package 824224
+2025-05-27T18:03:10.799Z Using token "7758130651584914308" from license for package 401407
+2025-05-27T18:03:10.799Z Using token "12807789865434028542" from license for package 21314
+2025-05-27T18:03:10.800Z Using token "17158538354695965942" from license for package 82712
+2025-05-27T18:03:10.800Z Using token "5205492745924131948" from license for package 522835
+2025-05-27T18:03:10.800Z Using token "15984522191214727074" from license for package 802812
+2025-05-27T18:03:10.800Z Using token "13043902522606318346" from license for package 965364
+2025-05-27T18:03:10.800Z Using token "3198013166041885284" from license for package 732887
+2025-05-27T18:03:10.800Z Using token "8559331057463306982" from license for package 871877
+2025-05-27T18:03:10.800Z Using token "11766601064585129637" from license for package 19007
+2025-05-27T18:03:10.800Z Using token "5620747593283334524" from license for package 59723
+2025-05-27T18:03:10.801Z Using token "10997656681317933283" from license for package 49228
+2025-05-27T18:03:10.801Z Using token "12555184247962141765" from license for package 916370
+2025-05-27T18:03:10.801Z Using token "2770540936804440969" from license for package 59389
+2025-05-27T18:03:10.801Z Using token "10209007906091514958" from license for package 801123
+2025-05-27T18:03:10.801Z Using token "14059949278858206274" from license for package 981318
+2025-05-27T18:03:10.801Z Using token "18136412339714309135" from license for package 515
+2025-05-27T18:03:10.801Z Using token "16465918589810122726" from license for package 7877
+2025-05-27T18:03:10.802Z Using token "1777377051405027801" from license for package 193007
+2025-05-27T18:03:10.802Z Using token "10012126714787401778" from license for package 158070
+2025-05-27T18:03:10.802Z Using token "5217546743956840161" from license for package 436163
+2025-05-27T18:03:10.802Z Using token "8214787893175718058" from license for package 48765
+2025-05-27T18:03:10.802Z Using token "6786472874629952029" from license for package 674005
+2025-05-27T18:03:10.802Z Using token "15122911990231259830" from license for package 633707
+2025-05-27T18:03:10.802Z Using token "17698110641177820820" from license for package 226738
+2025-05-27T18:03:10.802Z Using token "5773308471971276639" from license for package 910066
+2025-05-27T18:03:10.803Z Using token "1358864222989099820" from license for package 1004627
+2025-05-27T18:03:10.803Z Using token "2145963750953204968" from license for package 979793
+2025-05-27T18:03:10.803Z Using token "2454300648684937044" from license for package 935446
+2025-05-27T18:03:10.803Z Using token "16665884794790236727" from license for package 979417
+2025-05-27T18:03:10.803Z Using token "413060552477208502" from license for package 554163
+2025-05-27T18:03:10.803Z Using token "11993025609157459390" from license for package 996368
+2025-05-27T18:03:10.803Z Using token "12250982111799143471" from license for package 753887
+2025-05-27T18:03:10.804Z Using token "15290564472854065107" from license for package 155279
+2025-05-27T18:03:10.804Z Using token "10399777859805571635" from license for package 305139
+2025-05-27T18:03:10.804Z Using token "9317002348055109281" from license for package 411411
+2025-05-27T18:03:10.804Z Using token "12832663517018306072" from license for package 446458
+2025-05-27T18:03:10.804Z Using token "8018029144566547739" from license for package 288350
+2025-05-27T18:03:10.804Z Using token "10660652434190618804" from license for package 0
+2025-05-27T18:03:10.804Z Using token "815597319663344205" from license for package 935158
+2025-05-27T18:03:10.804Z Using token "8671553668064317605" from license for package 993283
+2025-05-27T18:03:10.805Z Using token "8814079869219588298" from license for package 592598
+2025-05-27T18:03:10.805Z Using token "1824571125278711651" from license for package 1020633
+2025-05-27T18:03:10.806Z Using token "4622317109041568133" from license for package 995582
+2025-05-27T18:03:10.806Z Using token "5180192102835926083" from license for package 1033864
+2025-05-27T18:03:10.806Z Using token "16870821960989552043" from license for package 912609
+2025-05-27T18:03:10.806Z Using token "10994426204999217039" from license for package 1011957
+2025-05-27T18:03:10.806Z Using token "2153114724060639947" from license for package 845655
+2025-05-27T18:03:10.806Z Using token "2047162147674726524" from license for package 167571
+2025-05-27T18:03:10.807Z Using token "11613277538411700860" from license for package 163111
+2025-05-27T18:03:10.807Z Using token "2030846461651245187" from license for package 969325
+2025-05-27T18:03:10.807Z Using token "10220118254241585466" from license for package 934141
+2025-05-27T18:03:10.807Z Using token "10153144886846138904" from license for package 1034140
+2025-05-27T18:03:10.807Z Using token "14543352646973089346" from license for package 78726
+2025-05-27T18:03:10.807Z Using token "1079186267967147501" from license for package 37361
+2025-05-27T18:03:10.807Z Using token "892682324354140965" from license for package 969527
+2025-05-27T18:03:10.808Z Using token "13408755078728996789" from license for package 152198
+2025-05-27T18:03:10.808Z Using token "6112911159441233728" from license for package 874796
+2025-05-27T18:03:10.808Z Using token "16265429886843261020" from license for package 969544
+2025-05-27T18:03:10.808Z Using token "10508513357581445308" from license for package 83311
+2025-05-27T18:03:10.808Z Using token "1150686307537651523" from license for package 203389
+2025-05-27T18:03:10.808Z Using token "2257443751079391952" from license for package 216522
+2025-05-27T18:03:10.808Z Using token "12070815442170850351" from license for package 630276
+2025-05-27T18:03:10.809Z Using token "496937331686741378" from license for package 1041314
+2025-05-27T18:03:10.809Z Using token "3510384436209469685" from license for package 765135
+2025-05-27T18:03:10.809Z Using token "3143316891990426638" from license for package 971172
+2025-05-27T18:03:10.809Z Using token "13507080007178114712" from license for package 1021443
+2025-05-27T18:03:10.809Z Using token "10273025824950556377" from license for package 1025324
+2025-05-27T18:03:10.809Z Using token "1686121278077202245" from license for package 522274
+2025-05-27T18:03:10.809Z Using token "3677684472815573485" from license for package 943262
+2025-05-27T18:03:10.810Z Using token "1586989755348311034" from license for package 1019545
+2025-05-27T18:03:10.810Z Using token "4946788673760501580" from license for package 929356
+2025-05-27T18:03:10.810Z Using token "16386030353238099832" from license for package 901422
+2025-05-27T18:03:10.810Z Using token "18352924727234580348" from license for package 1055395
+2025-05-27T18:03:10.810Z Using token "9118080153310140122" from license for package 1044805
+2025-05-27T18:03:10.810Z Using token "17633657168463599200" from license for package 1062312
+2025-05-27T18:03:10.810Z Using token "10313999904794030644" from license for package 1048675
+2025-05-27T18:03:10.811Z Using token "16376348783356412534" from license for package 870862
+2025-05-27T18:03:10.811Z Using token "4577565168158555648" from license for package 1063306
+2025-05-27T18:03:10.811Z Using token "15442722666765055226" from license for package 1053374
+2025-05-27T18:03:10.811Z Using token "15789187462330372453" from license for package 1086927
+2025-05-27T18:03:10.811Z Using token "9868709828090178136" from license for package 970101
+2025-05-27T18:03:10.811Z Using token "15261966930440079443" from license for package 183300
+2025-05-27T18:03:10.812Z Using token "6727431798567539835" from license for package 726763
+2025-05-27T18:03:10.812Z Using token "7838841105897706075" from license for package 947066
+2025-05-27T18:03:10.812Z Using token "3998239694861359925" from license for package 1158283
+2025-05-27T18:03:10.812Z Using token "4285100245827599821" from license for package 1187615
+2025-05-27T18:03:10.812Z Using token "16406825874759422263" from license for package 1195039
+2025-05-27T18:03:10.812Z Using token "903187113939096431" from license for package 1183619
+2025-05-27T18:03:10.812Z Using token "7114759383052372597" from license for package 1197908
+2025-05-27T18:03:10.813Z Using token "9839938003269744296" from license for package 1019861
+2025-05-27T18:03:10.813Z Using token "5138389284789485407" from license for package 1094073
+2025-05-27T18:03:10.813Z Using token "17309479551876367360" from license for package 54029
+2025-05-27T18:03:10.813Z Using token "10557614583677886392" from license for package 243248
+2025-05-27T18:03:10.813Z Using token "6301559144876598369" from license for package 1253981
+2025-05-27T18:03:10.813Z Using token "14855467275418048881" from license for package 233499
+2025-05-27T18:03:10.813Z Using token "1344317536066741850" from license for package 245677
+2025-05-27T18:03:10.813Z Using token "8862326766351997009" from license for package 992452
+2025-05-27T18:03:10.814Z Using token "7588104945360423234" from license for package 1030362
+2025-05-27T18:03:10.814Z Using token "9177367629228692295" from license for package 1209309
+2025-05-27T18:03:10.814Z Using token "12079496293014459573" from license for package 1261257
+2025-05-27T18:03:10.814Z Using token "9289102444975026764" from license for package 1289119
+2025-05-27T18:03:10.814Z Using token "4297545157699527724" from license for package 1176156
+2025-05-27T18:03:10.814Z Using token "17350481044635972905" from license for package 1279884
+2025-05-27T18:03:10.814Z Using token "8141716052640257761" from license for package 1250669
+2025-05-27T18:03:10.815Z Using token "1149915256421721590" from license for package 1301221
+2025-05-27T18:03:10.816Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:03:10.817Z [W2#5] Handled message: ClientUpdateGuestPassesList
+2025-05-27T18:03:10.818Z [W2#5] Handled message: ClientWalletInfoUpdate
+2025-05-27T18:03:10.818Z [W2#5] Handled message: ClientGameConnectTokens
+2025-05-27T18:03:10.819Z Received 10 game connect tokens. Had 0 tokens.
+2025-05-27T18:03:10.819Z [W2#5] Handled message: ClientPlayingSessionState
+2025-05-27T18:03:10.820Z [W2#5] Handled message: ClientVACBanStatus
+2025-05-27T18:03:10.922Z [W2#6] Handled message: SteamNotificationClient.NotificationsReceived#1
+2025-05-27T18:03:10.923Z [W2#6] Handled message: ClientFriendsGroupsList
+2025-05-27T18:03:10.923Z [W2#6] Unhandled message: ClientServersAvailable
+2025-05-27T18:03:11.087Z [W2#7] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:03:11.126Z [W2#8] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.138Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:03:11.141Z [W2#9] Handled message: Authentication.GenerateAccessTokenForApp#1_Response
+2025-05-27T18:03:11.141Z [W2#9] Handled message: ClientChatOfflineMessageNotification
+2025-05-27T18:03:11.142Z [W2#9] Handled message: ClientPersonaState
+2025-05-27T18:03:11.143Z [W2#9] Handled message: ClientPersonaState
+2025-05-27T18:03:11.144Z [W2#9] Handled message: ClientPersonaState
+2025-05-27T18:03:11.144Z [W2#9] Handled message: ClientPersonaState
+2025-05-27T18:03:11.145Z [W2#9] Handled message: ClientPersonaState
+2025-05-27T18:03:11.233Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.234Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.234Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.235Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.235Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.236Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.237Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.237Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.238Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.242Z [W2#10] Handled message: ClientClanState
+2025-05-27T18:03:11.242Z [W2#10] Handled message: ClientClanState
+2025-05-27T18:03:11.243Z [W2#10] Handled message: ClientPersonaState
+2025-05-27T18:03:11.244Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:03:11.579Z [W2#11] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.625Z [W2#12] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.657Z Enqueued incoming message; queue size is now 1
+2025-05-27T18:03:11.666Z [W2#13] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.693Z Enqueued incoming message; queue size is now 1
+2025-05-27T18:03:11.696Z Enqueued incoming message; queue size is now 2
+2025-05-27T18:03:11.697Z [W2#14] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.707Z [W2#15] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.729Z [W2#16] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.756Z [W2#17] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.832Z [W2#18] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.879Z [W2#19] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:11.881Z Sending message: ClientPICSAccessTokenRequest
+2025-05-27T18:03:12.225Z [W2#20] Handled message: ClientPICSAccessTokenResponse
+2025-05-27T18:03:12.227Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:03:12.628Z [W2#21] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:03:14.472Z [W2#22] Handled message: ClientIsLimitedAccount
+2025-05-27T18:03:32.574Z [W2#23] Handled message: ClientClanState
+2025-05-27T18:03:43.502Z Sending message: ClientGamesPlayedWithDataBlob
+2025-05-27T18:03:43.824Z [W2#24] Handled message: ClientPlayingSessionState
+2025-05-27T18:03:43.825Z [W2#24] Handled message: ClientGameConnectTokens
+2025-05-27T18:03:43.825Z Received 1 game connect tokens. Had 10 tokens.
+2025-05-27T18:03:43.825Z [W2#24] Unhandled message: PlayerClient.NotifyLastPlayedTimes#1
+2025-05-27T18:03:43.825Z [W2#24] Unhandled message: FamilyGroupsClient.NotifyRunningApps#1
+2025-05-27T18:03:43.916Z [W2#25] Handled message: ClientPersonaState
+2025-05-27T18:04:01.078Z [W2#26] Handled message: SteamNotificationClient.NotificationsReceived#1
+2025-05-27T18:04:11.087Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:04:11.423Z [W2#27] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:04:40.523Z [W2#28] Handled message: ClientClanState
+2025-05-27T18:05:11.424Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:05:11.723Z [W2#29] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:06:11.723Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:06:12.073Z [W2#30] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:06:12.074Z Sending message: ClientPICSAccessTokenRequest
+2025-05-27T18:06:12.422Z [W2#31] Handled message: ClientPICSAccessTokenResponse
+2025-05-27T18:06:12.422Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:06:12.723Z [W2#32] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:07:12.422Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:07:12.724Z [W2#33] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:07:12.724Z Sending message: ClientPICSAccessTokenRequest
+2025-05-27T18:07:13.022Z [W2#34] Handled message: ClientPICSAccessTokenResponse
+2025-05-27T18:07:13.023Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:07:13.324Z [W2#35] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:08:13.023Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:08:13.322Z [W2#36] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:08:40.722Z [W2#37] Handled message: ClientPersonaState
+2025-05-27T18:09:13.322Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:09:13.622Z [W2#38] Handled message: ClientPICSChangesSinceResponse

@@ -1,0 +1,119 @@
+2025-05-27T17:33:13.691Z Error reading file machineAuthToken.steam_login_1.txt: ENOENT: no such file or directory, open 'D:\haurix\steam_data\user_4\machineAuthToken.steam_login_1.txt'
+2025-05-27T17:33:14.289Z API GET request to https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v0001/?format=vdf&cellid=62: 200
+2025-05-27T17:33:14.304Z Randomly chose websockets server cmp1-fra2.steamserver.net:27023 (load = 39, wtd_load = 115.33856463432312)
+2025-05-27T17:33:14.305Z [W1] Connecting to WebSocket CM cmp1-fra2.steamserver.net:27023
+2025-05-27T17:33:14.709Z [W1] WebSocket connection success; now logging in
+2025-05-27T17:33:14.710Z Logging on with account name and password; fetching a new refresh token
+2025-05-27T17:33:14.720Z Sending message: ClientHello
+2025-05-27T17:33:14.746Z Sending message: Authentication.GetPasswordRSAPublicKey#1
+2025-05-27T17:33:15.142Z [W1#1] Handled message: Authentication.GetPasswordRSAPublicKey#1_Response
+2025-05-27T17:33:15.167Z Sending message: Authentication.BeginAuthSessionViaCredentials#1
+2025-05-27T17:33:15.497Z [W1] WebSocket closed by remote with code 1000 and reason ""
+2025-05-27T17:33:15.497Z [W1] Connection closed, but message queue is active. Enqueueing __CLOSE__
+2025-05-27T17:33:15.498Z [W1#2] Handled message: Authentication.BeginAuthSessionViaCredentials#1_Response
+2025-05-27T17:33:15.498Z [W1] Handling connection close
+2025-05-27T17:33:15.499Z steam-session startWithCredentials exception
+2025-05-27T17:33:15.499Z Handle logon response (InvalidPassword)
+2025-05-27T17:33:15.500Z Disconnecting without sending logoff
+2025-05-27T17:33:15.500Z [W1] We wanted to end connection, but it's not connected or connecting
+2025-05-27T18:00:41.886Z Error reading file machineAuthToken.werfghvbcf.txt: ENOENT: no such file or directory, open 'D:\haurix\steam_data\user_4\machineAuthToken.werfghvbcf.txt'
+2025-05-27T18:00:42.524Z API GET request to https://api.steampowered.com/ISteamDirectory/GetCMListForConnect/v0001/?format=vdf&cellid=62: 200
+2025-05-27T18:00:42.539Z Randomly chose websockets server cmp2-fra2.steamserver.net:27019 (load = 44, wtd_load = 116.935842037200928)
+2025-05-27T18:00:42.539Z [W1] Connecting to WebSocket CM cmp2-fra2.steamserver.net:27019
+2025-05-27T18:00:42.947Z [W1] WebSocket connection success; now logging in
+2025-05-27T18:00:42.947Z Logging on with account name and password; fetching a new refresh token
+2025-05-27T18:00:42.956Z Sending message: ClientHello
+2025-05-27T18:00:42.969Z Sending message: Authentication.GetPasswordRSAPublicKey#1
+2025-05-27T18:00:43.393Z [W1#1] Handled message: Authentication.GetPasswordRSAPublicKey#1_Response
+2025-05-27T18:00:43.410Z Sending message: Authentication.BeginAuthSessionViaCredentials#1
+2025-05-27T18:00:43.789Z [W1#2] Handled message: Authentication.BeginAuthSessionViaCredentials#1_Response
+2025-05-27T18:00:43.795Z [steam-session] start session response {"clientId":"26851189589125172","requestId":{"type":"Buffer","data":[92,43,84,104,198,177,206,158,255,146,234,110,44,63,216,92]},"pollInterval":5,"allowedConfirmations":[{"type":3},{"type":4}],"steamId":"76561199652763874","weakToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogImM6MjY4NTExODk1ODkxMjUxNzIiLCAic3ViIjogIjc2NTYxMTk5NjUyNzYzODc0IiwgImF1ZCI6IFsgIndlYWsiIF0sICJleHAiOiAxNzQ4MzY5NzExLCAibmJmIjogMCwgImlhdCI6IDE3NDgzNjg4MTEsICJqdGkiOiAiMDAxN18yNjU2QTVBMF81ODVEQSIsICJvYXQiOiAxNzQ4MzY4ODExLCAicnRfZXhwIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjI0NC43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjI0NC43NiIgfQ.UtyLZWa1jXnfQnIpaXndWlZqljW7ih6CAGklm2zuoFWBA741EjFC_vM53qo1DEXY0WmTZl6p9qzCJjOpGS0-BA"}
+2025-05-27T18:00:43.796Z [steam-session] device code required
+2025-05-27T18:00:43.797Z [steam-session] submitting steam guard code 99Y7V
+2025-05-27T18:00:43.801Z Sending message: Authentication.UpdateAuthSessionWithSteamGuardCode#1
+2025-05-27T18:00:44.138Z [W1#3] Handled message: Authentication.UpdateAuthSessionWithSteamGuardCode#1_Response
+2025-05-27T18:00:44.143Z Sending message: Authentication.PollAuthSessionStatus#1
+2025-05-27T18:00:44.487Z [W1#4] Handled message: Authentication.PollAuthSessionStatus#1_Response
+2025-05-27T18:00:44.491Z [steam-session] poll response {"refreshToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInN0ZWFtIiwgInN1YiI6ICI3NjU2MTE5OTY1Mjc2Mzg3NCIsICJhdWQiOiBbICJjbGllbnQiLCAid2ViIiwgInJlbmV3IiwgImRlcml2ZSIgXSwgImV4cCI6IDE3NjYyNzkxNDYsICJuYmYiOiAxNzM5NzI4ODEyLCAiaWF0IjogMTc0ODM2ODgxMiwgImp0aSI6ICIwMDE3XzI2NTZBNUEwXzU4NUNGIiwgIm9hdCI6IDE3NDgzNjg4MTIsICJwZXIiOiAxLCAiaXBfc3ViamVjdCI6ICIxMDQuMjguMjQ0Ljc2IiwgImlwX2NvbmZpcm1lciI6ICIxMDQuMjguMjQ0Ljc2IiB9.uXvfR39A8qFDPE-WJhwAUDCrOmAUGa-e86WHsGjRo_5WdwVlPg310Xt80kSti50sdNAPKh_RiY0NLevcpAnSBw","accessToken":"eyAidHlwIjogIkpXVCIsICJhbGciOiAiRWREU0EiIH0.eyAiaXNzIjogInI6MDAxN18yNjU2QTVBMF81ODVDRiIsICJzdWIiOiAiNzY1NjExOTk2NTI3NjM4NzQiLCAiYXVkIjogWyAiY2xpZW50IiwgIndlYiIgXSwgImV4cCI6IDE3NDg0NTU0NzYsICJuYmYiOiAxNzM5NzI4ODEyLCAiaWF0IjogMTc0ODM2ODgxMiwgImp0aSI6ICIwMDE2XzI2NTZBNTlGX0M1QTk5IiwgIm9hdCI6IDE3NDgzNjg4MTIsICJydF9leHAiOiAxNzY2Mjc5MTQ2LCAicGVyIjogMCwgImlwX3N1YmplY3QiOiAiMTA0LjI4LjI0NC43NiIsICJpcF9jb25maXJtZXIiOiAiMTA0LjI4LjI0NC43NiIgfQ.6aSf_v-A4vyaIzP_QkEWjZSRjOOiG9x7FHVHf5jm7BJpqkFiexIFhx_elEldaKbjMVQ8qwxZBHtGJFHDSM75AQ","hadRemoteInteraction":false,"accountName":"werfghvbcf"}
+2025-05-27T18:00:44.493Z Password auth succeeded in 1545 ms
+2025-05-27T18:00:44.503Z Sending message: ClientLogon
+2025-05-27T18:00:44.838Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T18:00:44.839Z [W1#5] Unhandled message: ClientServersAvailable
+2025-05-27T18:00:44.846Z [W1#5] Handled message: ClientLogOnResponse (OK)
+2025-05-27T18:00:44.848Z Handle logon response (OK)
+2025-05-27T18:00:44.853Z Sending message: ClientChangeStatus
+2025-05-27T18:00:44.857Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:00:44.859Z Sending message: ClientRequestItemAnnouncements
+2025-05-27T18:00:44.861Z Sending message: ClientRequestCommentNotifications
+2025-05-27T18:00:44.863Z Sending message: ClientChatRequestOfflineMessageCount
+2025-05-27T18:00:44.867Z Sending message: Authentication.GenerateAccessTokenForApp#1
+2025-05-27T18:00:44.871Z [W1#5] Handled message: ClientAccountInfo
+2025-05-27T18:00:44.874Z [W1#5] Handled message: ClientEmailAddrInfo
+2025-05-27T18:00:44.877Z [W1#5] Handled message: ClientFriendsList
+2025-05-27T18:00:44.879Z Sending message: ClientRequestFriendData
+2025-05-27T18:00:44.882Z [W1#5] Handled message: ClientPlayerNicknameList
+2025-05-27T18:00:44.886Z [W1#5] Handled message: ClientLicenseList
+2025-05-27T18:00:44.887Z Using token "8049398090486337961" from license for package 303386
+2025-05-27T18:00:44.887Z Using token "10660652434190618804" from license for package 0
+2025-05-27T18:00:44.888Z Using token "6786472874629952029" from license for package 674005
+2025-05-27T18:00:44.888Z Using token "14825380356137423367" from license for package 1043076
+2025-05-27T18:00:44.890Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:00:44.892Z [W1#5] Handled message: ClientUpdateGuestPassesList
+2025-05-27T18:00:44.894Z [W1#5] Handled message: ClientWalletInfoUpdate
+2025-05-27T18:00:44.896Z [W1#5] Handled message: ClientGameConnectTokens
+2025-05-27T18:00:44.897Z Received 10 game connect tokens. Had 0 tokens.
+2025-05-27T18:00:44.898Z [W1#5] Handled message: ClientPlayingSessionState
+2025-05-27T18:00:44.899Z [W1#5] Handled message: ClientVACBanStatus
+2025-05-27T18:00:44.992Z [W1#6] Handled message: SteamNotificationClient.NotificationsReceived#1
+2025-05-27T18:00:45.082Z [W1#7] Unhandled message: ClientServersAvailable
+2025-05-27T18:00:45.085Z [W1#7] Handled message: ClientFriendsGroupsList
+2025-05-27T18:00:45.291Z Enqueued incoming message; queue size is now 1
+2025-05-27T18:00:45.294Z [W1#8] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:00:45.298Z [W1#8] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:00:45.304Z [W1#8] Handled message: ClientChatOfflineMessageNotification
+2025-05-27T18:00:45.305Z [W1#8] Handled message: Authentication.GenerateAccessTokenForApp#1_Response
+2025-05-27T18:00:45.308Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:00:45.316Z [W1#9] Handled message: ClientPersonaState
+2025-05-27T18:00:45.317Z [W1#9] Handled message: ClientPersonaState
+2025-05-27T18:00:45.318Z [W1#9] Handled message: ClientPersonaState
+2025-05-27T18:00:45.319Z [W1#9] Handled message: ClientPersonaState
+2025-05-27T18:00:45.320Z [W1#9] Handled message: ClientPersonaState
+2025-05-27T18:00:45.321Z [W1#9] Handled message: ClientPersonaState
+2025-05-27T18:00:45.759Z [W1#10] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:00:45.817Z [W1#11] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:00:45.830Z Sending message: ClientPICSAccessTokenRequest
+2025-05-27T18:00:46.146Z [W1#12] Handled message: ClientPICSAccessTokenResponse
+2025-05-27T18:00:46.148Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:00:46.546Z [W1#13] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:00:48.639Z [W1#14] Handled message: ClientIsLimitedAccount
+2025-05-27T18:01:23.049Z Sending message: ClientGamesPlayedWithDataBlob
+2025-05-27T18:01:23.386Z [W1#15] Unhandled message: PlayerClient.NotifyLastPlayedTimes#1
+2025-05-27T18:01:23.477Z [W1#16] Handled message: ClientPlayingSessionState
+2025-05-27T18:01:23.477Z [W1#16] Handled message: ClientGameConnectTokens
+2025-05-27T18:01:23.478Z Received 1 game connect tokens. Had 10 tokens.
+2025-05-27T18:01:23.569Z [W1#17] Handled message: ClientPersonaState
+2025-05-27T18:01:23.837Z [W1#18] Unhandled message: ClientServiceCall
+2025-05-27T18:01:45.307Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:01:45.636Z [W1#19] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:02:18.189Z [W1#20] Handled message: ClientFromGC
+2025-05-27T18:02:18.190Z Received 730 GC message 4009
+2025-05-27T18:02:43.085Z [W1#21] Handled message: ClientFromGC
+2025-05-27T18:02:43.086Z Received 730 GC message 4009
+2025-05-27T18:02:45.638Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:02:45.984Z [W1#22] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:03:45.986Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:03:46.335Z [W1#23] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:04:46.336Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:04:46.685Z [W1#24] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:05:46.686Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:05:47.034Z [W1#25] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:06:47.036Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:06:47.382Z [W1#26] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:06:47.383Z Sending message: ClientPICSAccessTokenRequest
+2025-05-27T18:06:47.682Z [W1#27] Handled message: ClientPICSAccessTokenResponse
+2025-05-27T18:06:47.683Z Sending message: ClientPICSProductInfoRequest
+2025-05-27T18:06:47.983Z [W1#28] Handled message: ClientPICSProductInfoResponse
+2025-05-27T18:07:47.682Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:07:47.981Z [W1#29] Handled message: ClientPICSChangesSinceResponse
+2025-05-27T18:08:47.983Z Sending message: ClientPICSChangesSinceRequest
+2025-05-27T18:08:48.336Z [W1#30] Handled message: ClientPICSChangesSinceResponse

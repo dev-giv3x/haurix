@@ -1,0 +1,20 @@
+{
+  "name": "haurix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "https-proxy-agent": "^7.0.6",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "steam-user": "^5.2.3"
+  }
+}
