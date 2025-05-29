@@ -1,68 +1,286 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>haurix panel</title>
+  <meta charset="UTF-8" />
+  <title>Steam Boost Panel</title>
+  <style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background-color: #0a143d; 
+  color: #c9d1d9;
+}
+
+h1, h2 {
+  color: #58a6ff;
+  text-align: center;
+}
+
+input, button {
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  box-sizing: border-box;
+}
+
+input {
+  background-color: #1b234b; 
+  color: #c9d1d9;
+  border: 1px solid #2e3a7a; 
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #79c0ff; 
+}
+
+button {
+  background: linear-gradient(135deg, #3b5eea, #5799ff); 
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #5a7ff6, #9ac7ff);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #ffffff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+pre {
+  background: #1b234b;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+  overflow-x: auto;
+  border: 1px solid #2e3a7a;
+}
+</style>
 </head>
 <body>
-  <h2>Логин</h2>
-  <div id="step1">
-    <input id="login" placeholder="Login" />
-    <input id="password" type="password" placeholder="Password" />
-    <button onclick="login()">Войти</button>
-    <p id="message"></p>
+  <h1>Steam Boost Panel</h1>
+
+  <div id="login-form">
+    <h2>Login</h2>
+    <input type="text" id="login" placeholder="Login" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
   </div>
 
-  <div id="step2" style="display:none;">
-    <input id="steamGuardCode" placeholder="Steam Guard код" /><br />
-    <button onclick="sendSteamGuard()">Отправить код</button>
-    <p id="guardMessage"></p>
+  <div id="dashboard" class="hidden">
+    <h2>Welcome!</h2>
+
+    <section id="steam-login-section">
+      <h3>Steam Login</h3>
+      <input type="text" id="steam-login" placeholder="Steam login" />
+      <input type="password" id="steam-password" placeholder="Steam password" />
+      <input type="text" id="steam-2fa" placeholder="Steam 2FA code (if any)" />
+    <button id="steamLoginBtn" onclick="startSteamLogin()">Войти в Steam</button>
+  <span class="spinner hidden"></span>
+</button>
+    </section>
+
+    <section id="boost-section" class="hidden">
+  <h3>Start Boost</h3>
+<input type="text" id="appId" placeholder="Введите ID игры или несколько через запятую">
+  <button onclick="startBoost()">Start Boost</button>
+  <button onclick="stopBoost()">Stop Boost</button>
+</section>
+
+    <button onclick="logout()">Logout</button>
+
+    <pre id="status-output"></pre>
   </div>
 
-  <script>
-    async function login() {
-      const login = document.getElementById('login').value;
-      const password = document.getElementById('password').value;
-      const message = document.getElementById('message');
-      message.textContent = '...';
+<script>
+  let token = null;
 
-      const resp = await fetch('http://localhost:3000/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ login, password })
-      });
+  async function login() {
+    const login = document.getElementById('login').value.trim();
+    const password = document.getElementById('password').value;
 
-      const data = await resp.json();
+    if (!login || !password) {
+      alert('Please fill all login fields');
+      return;
+    }
 
-      if(data.steamGuardRequired){
-        message.textContent = 'Требуется Steam Guard код';
-        document.getElementById('step1').style.display = 'none';
-        document.getElementById('step2').style.display = 'block';
-      } else if(data.message){
-        message.textContent = data.message;
-      } else if(data.error){
-        message.textContent = 'Ошибка: ' + data.error;
+    const res = await fetch('/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ login, password }),
+    });
+
+    const data = await res.json();
+
+    if (res.ok && data.token) {
+      token = data.token;
+      document.getElementById('login-form').classList.add('hidden');
+      document.getElementById('dashboard').classList.remove('hidden');
+      document.getElementById('boost-section').classList.add('hidden'); 
+      document.getElementById('status-output').innerText = 'Logged in successfully.';
+    } else {
+      alert(data.error || 'Login failed');
+    }
+  }
+
+   async function startSteamLogin() {
+      const btn = document.getElementById('steamLoginBtn');
+      const login = document.getElementById('steam-login').value.trim();
+      const password = document.getElementById('steam-password').value;
+      const twoFactorCode = document.getElementById('steam-2fa').value.trim();
+      btn.disabled = true;
+      btn.innerHTML = '<div class="spinner"></div>';
+
+      try {
+       const res = await fetch('/steam/login', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ login, password, twoFactorCode })
+    });
+
+        const checkLoginStatus = async () => {
+          const res = await fetch('/status', {
+            headers: {
+              'Authorization': `Bearer ${token}`
+            }
+          });
+          const data = await res.json();
+          return data.loggedIn;
+        };
+
+        const waitForLogin = async () => {
+  const interval = 1000;     
+  const maxAttempts = 30;     
+  
+  await new Promise(res => setTimeout(res, 6000));
+  
+  for (let i = 0; i < maxAttempts; i++) {
+    const loggedIn = await checkLoginStatus();
+    if (loggedIn) return true;
+    await new Promise(res => setTimeout(res, interval));
+  }
+  
+  return false;
+};
+
+        const success = await waitForLogin();
+        if (success) {
+          btn.innerText = 'Успешный вход!';
+          btn.style.backgroundColor = '#1e7d4d';
+          document.getElementById('boost-section').classList.remove('hidden');
+          document.getElementById('steam-login-section').classList.add('hidden');
+
+        } else {
+          btn.innerText = 'Ошибка входа';
+          btn.style.backgroundColor = '#a73232';
+        }
+
+      } catch (err) {
+        console.error('Ошибка входа:', err);
+        btn.innerText = 'Ошибка';
+        btn.style.backgroundColor = '#a73232';
       }
     }
 
-    async function sendSteamGuard() {
-      const code = document.getElementById('steamGuardCode').value;
-      const guardMessage = document.getElementById('guardMessage');
-      guardMessage.textContent = '...';
+ async function startBoost() {
+  const input = document.getElementById('appId').value.trim();
+  if (!input) {
+    alert('Введите ID игры');
+    return;
+  }
 
-      const resp = await fetch('http://localhost:3000/steamguard', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ code })
-      });
+  const appIds = input.split(',')
+    .map(x => Number(x.trim()))
+    .filter(x => !isNaN(x) && x > 0);
 
-      const data = await resp.json();
+  if (appIds.length === 0) {
+    alert('Введите корректные ID игр');
+    return;
+  }
+  console.log('appIds (массив чисел):', appIds);
+console.log('Типы appIds:', appIds.map(x => typeof x));
 
-      if(data.message){
-        guardMessage.textContent = data.message;
-      } else if(data.error){
-        guardMessage.textContent = 'Ошибка: ' + data.error;
+  const res = await fetch('/steam/start', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ appIds })
+  });
+
+  const data = await res.json();
+  document.getElementById('status-output').innerText = JSON.stringify(data, null, 2);
+}
+
+  async function stopBoost() {
+    const res = await fetch('/steam/stop', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Content-Type': 'application/json'
       }
+    });
+
+    const data = await res.json();
+
+    if (res.ok) {
+      document.getElementById('status-output').innerText = data.message || 'Boost stopped successfully';
+    } else {
+      document.getElementById('status-output').innerText = 'Error stopping boost: ' + (data.error || JSON.stringify(data));
     }
-  </script>
+  }
+
+  function logout() {
+    token = null;
+    document.getElementById('dashboard').classList.add('hidden');
+    document.getElementById('login-form').classList.remove('hidden');
+    document.getElementById('status-output').innerText = '';
+    document.getElementById('boost-section').classList.add('hidden');
+    ['login', 'password', 'steam-login', 'steam-password', 'steam-2fa'].forEach(id => {
+      document.getElementById(id).value = '';
+    });
+  }
+</script>
+
 </body>
 </html>
